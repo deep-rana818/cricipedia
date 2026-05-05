@@ -6,7 +6,7 @@ export type Player = {
   born: string
   batting: string
   bowling: string
-  image: string
+  imageUrl: string
   bio: string
   testStats: Stats
   odiStats: Stats
@@ -32,7 +32,7 @@ export const players: Player[] = [
     born: '5 November 1988, Delhi, India',
     batting: 'Right-handed',
     bowling: 'Right-arm medium',
-    image: '🧑‍🏏',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/9/9c/Virat_Kohli.jpg',
     bio: 'Virat Kohli is an Indian international cricketer and former captain of the Indian national team. Widely regarded as one of the greatest batsmen of all time, he holds numerous batting records across all formats of the game.',
     testStats: {
       matches: 113, runs: 8848, average: 48.08,
@@ -55,7 +55,7 @@ export const players: Player[] = [
     born: '30 April 1987, Nagpur, India',
     batting: 'Right-handed',
     bowling: 'Right-arm off-break',
-    image: '🧑‍🏏',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Rohit_Sharma_2019.jpg/220px-Rohit_Sharma_2019.jpg',
     bio: 'Rohit Sharma is an Indian international cricketer and the current captain of the Indian national team. Known for his elegant strokeplay and big scores, he holds the record for the highest individual score in ODIs — 264.',
     testStats: {
       matches: 67, runs: 4301, average: 40.57,
@@ -78,7 +78,7 @@ export const players: Player[] = [
     born: '2 June 1989, Sydney, Australia',
     batting: 'Right-handed',
     bowling: 'Right-arm leg-break',
-    image: '🧑‍🏏',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Steve_Smith_2019.jpg/220px-Steve_Smith_2019.jpg',
     bio: 'Steve Smith is an Australian international cricketer, widely considered one of the best Test batsmen of his generation. Known for his unorthodox technique and exceptional concentration, he has dominated Test cricket for over a decade.',
     testStats: {
       matches: 104, runs: 9174, average: 57.34,
@@ -101,7 +101,7 @@ export const players: Player[] = [
     born: '4 June 1991, Christchurch, New Zealand',
     batting: 'Left-handed',
     bowling: 'Right-arm fast-medium',
-    image: '🧑‍🏏',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Ben_Stokes_2019.jpg/220px-Ben_Stokes_2019.jpg',
     bio: 'Ben Stokes is an English international cricketer and the current captain of the England Test team. One of the finest all-rounders in cricket history, he is known for his match-winning performances with both bat and ball.',
     testStats: {
       matches: 112, runs: 6429, average: 35.67,
@@ -124,8 +124,7 @@ export const players: Player[] = [
     born: '6 December 1993, Ahmedabad, India',
     batting: 'Right-handed',
     bowling: 'Right-arm fast',
-    image: '🧑‍🏏',
-    bio: 'Jasprit Bumrah is an Indian international cricketer and the vice-captain of the Indian Test team. Regarded as one of the best bowlers in the world across all formats, he is known for his unorthodox action, deadly yorkers, and ability to bowl in any match situation.',
+imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Jasprit_Bumrah_2023.jpg/220px-Jasprit_Bumrah_2023.jpg',    bio: 'Jasprit Bumrah is an Indian international cricketer and the vice-captain of the Indian Test team. Regarded as one of the best bowlers in the world across all formats, he is known for his unorthodox action, deadly yorkers, and ability to bowl in any match situation.',
     testStats: {
       matches: 40, runs: 201, average: 8.37,
       strikeRate: 65.1, hundreds: 0, fifties: 0, wickets: 195
@@ -147,8 +146,7 @@ export const players: Player[] = [
     born: '8 May 1993, Westmead, Australia',
     batting: 'Right-handed',
     bowling: 'Right-arm fast',
-    image: '🧑‍🏏',
-    bio: 'Pat Cummins is an Australian international cricketer and the captain of the Australian Test and ODI teams. One of the best fast bowlers in the world, he combines express pace with exceptional control and has led Australia to multiple ICC tournament victories.',
+imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Pat_Cummins_2023.jpg/220px-Pat_Cummins_2023.jpg',    bio: 'Pat Cummins is an Australian international cricketer and the captain of the Australian Test and ODI teams. One of the best fast bowlers in the world, he combines express pace with exceptional control and has led Australia to multiple ICC tournament victories.',
     testStats: {
       matches: 67, runs: 1445, average: 17.40,
       strikeRate: 60.2, hundreds: 0, fifties: 4, wickets: 282
@@ -170,8 +168,8 @@ export const players: Player[] = [
     born: '15 October 1994, Lahore, Pakistan',
     batting: 'Right-handed',
     bowling: 'Right-arm off-break',
-    image: '🧑‍🏏',
-    bio: 'Babar Azam is a Pakistani international cricketer and former captain of the Pakistan national team. Widely regarded as one of the best batsmen in the world, he is known for his elegant strokeplay and consistency across all formats.',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Babar_Azam_in_2022.jpg/220px-Babar_Azam_in_2022.jpg',  
+  bio: 'Babar Azam is a Pakistani international cricketer and former captain of the Pakistan national team. Widely regarded as one of the best batsmen in the world, he is known for his elegant strokeplay and consistency across all formats.',
     testStats: {
       matches: 55, runs: 3898, average: 45.27,
       strikeRate: 50.9, hundreds: 9, fifties: 27, wickets: 0
@@ -193,7 +191,7 @@ export const players: Player[] = [
     born: '8 August 1990, Tauranga, New Zealand',
     batting: 'Right-handed',
     bowling: 'Right-arm off-break',
-    image: '🧑‍🏏',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Kane_Williamson_2018.jpg/220px-Kane_Williamson_2018.jpg',
     bio: 'Kane Williamson is a New Zealand international cricketer and former captain of the New Zealand national team. Considered one of the "Fab Four" of modern batting alongside Kohli, Smith and Root, he is renowned for his calm temperament and technically excellent batting.',
     testStats: {
       matches: 103, runs: 8320, average: 53.36,
@@ -216,7 +214,7 @@ export const players: Player[] = [
     born: '30 December 1990, Sheffield, England',
     batting: 'Right-handed',
     bowling: 'Right-arm off-break',
-    image: '🧑‍🏏',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Joe_Root_2019.jpg/220px-Joe_Root_2019.jpg',
     bio: 'Joe Root is an English international cricketer and former captain of the England Test team. The highest run-scorer in England Test history, he is regarded as one of the finest batsmen of his generation and a key member of the "Fab Four".',
     testStats: {
       matches: 145, runs: 12972, average: 49.31,

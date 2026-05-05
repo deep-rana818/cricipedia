@@ -1,7 +1,7 @@
 import { getPlayer } from '@/lib/data'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
-
+import Image from 'next/image'
 export default async function PlayerPage({
   params,
 }: {
@@ -28,8 +28,15 @@ export default async function PlayerPage({
 
       {/* Player Header */}
       <div className="bg-white border border-gray-200 rounded p-6 mb-6 flex gap-6 items-start">
-        <div className="text-7xl">{player.image}</div>
-        <div className="flex-1">
+<div className="w-24 h-24 rounded-lg overflow-hidden bg-gray-100 flex-shrink-0">
+  <Image
+    src={player.imageUrl}
+    alt={player.name}
+    width={96}
+    height={96}
+    className="w-full h-full object-cover object-top"
+  />
+</div>      <div className="flex-1">
           <h1 className="text-3xl font-bold mb-1" style={{ color: 'var(--cricket-green)' }}>
             {player.name}
           </h1>
