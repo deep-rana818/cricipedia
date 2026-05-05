@@ -43,12 +43,12 @@ export default function Navbar() {
         </form>
 
         {/* Nav links */}
-        <div className="flex gap-6 text-sm">
-          <Link href="/" className="text-white hover:text-yellow-300 no-underline">Home</Link>
-          <Link href="/player/virat-kohli" className="text-white hover:text-yellow-300 no-underline">Players</Link>
-          <Link href="/match/ind-vs-aus-2024" className="text-white hover:text-yellow-300 no-underline">Matches</Link>
-        </div>
-
+<div className="flex gap-6 text-sm">
+  <Link href="/" className="text-white hover:text-yellow-300 no-underline">Home</Link>
+  <Link href="/teams" className="text-white hover:text-yellow-300 no-underline">Teams</Link>
+  <Link href="/player/virat-kohli" className="text-white hover:text-yellow-300 no-underline">Players</Link>
+  <Link href="/match/ind-vs-aus-2024" className="text-white hover:text-yellow-300 no-underline">Matches</Link>
+</div>
       </div>
     </nav>
   )

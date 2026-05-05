@@ -48,11 +48,16 @@ export default function HomePage() {
         <h2 className="text-2xl font-bold mb-4" style={{ color: 'var(--cricket-green)' }}>Featured Players</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {[
-            { name: 'Virat Kohli', role: 'Batsman', country: '🇮🇳 India', slug: 'virat-kohli' },
-            { name: 'Rohit Sharma', role: 'Batsman', country: '🇮🇳 India', slug: 'rohit-sharma' },
-            { name: 'Steve Smith', role: 'Batsman', country: '🇦🇺 Australia', slug: 'steve-smith' },
-            { name: 'Ben Stokes', role: 'All-rounder', country: '🏴󠁧󠁢󠁥󠁮󠁧󠁿 England', slug: 'ben-stokes' },
-          ].map((player) => (
+  { name: 'Virat Kohli', role: 'Batsman', country: '🇮🇳 India', slug: 'virat-kohli' },
+  { name: 'Rohit Sharma', role: 'Batsman', country: '🇮🇳 India', slug: 'rohit-sharma' },
+  { name: 'Jasprit Bumrah', role: 'Bowler', country: '🇮🇳 India', slug: 'jasprit-bumrah' },
+  { name: 'Steve Smith', role: 'Batsman', country: '🇦🇺 Australia', slug: 'steve-smith' },
+  { name: 'Pat Cummins', role: 'Bowler', country: '🇦🇺 Australia', slug: 'pat-cummins' },
+  { name: 'Ben Stokes', role: 'All-rounder', country: '🏴󠁧󠁢󠁥󠁮󠁧󠁿 England', slug: 'ben-stokes' },
+  { name: 'Joe Root', role: 'Batsman', country: '🏴󠁧󠁢󠁥󠁮󠁧󠁿 England', slug: 'joe-root' },
+  { name: 'Babar Azam', role: 'Batsman', country: '🇵🇰 Pakistan', slug: 'babar-azam' },
+  { name: 'Kane Williamson', role: 'Batsman', country: '🇳🇿 New Zealand', slug: 'kane-williamson' },
+].map((player) => (
             <Link
               key={player.slug}
               href={`/player/${player.slug}`}
